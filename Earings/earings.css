@@ -1,0 +1,274 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.navbar .logo img {
+    height: 50px;
+}
+
+.navbar .nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+}
+
+.navbar .nav-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.navbar .nav-icons i {
+    font-size: 18px;
+    color: #000;
+}
+.header {
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: normal;
+    text-align: left;
+    margin-left: 30px;
+}
+
+.header p {
+    margin: 5px 0 0;
+    color: #666666;
+    text-align: left;
+    margin-left: 30px;
+}
+
+.filter-sort {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.filter-sort div {
+    margin-left: 20px;
+    color: #666666;
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+    justify-content: center;
+}
+
+.product-card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    width: calc(25% - 20px);
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-card .label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #ffffff;
+    padding: 5px 10px;
+    border: 1px solid #e0e0e0;
+    font-size: 12px;
+    color: #666666;
+}
+
+.product-card h2 {
+    font-size: 16px;
+    margin: 10px 0 5px;
+    color: #333333;
+}
+
+.product-card p {
+    margin: 5px 0;
+    color: #666666;
+}
+
+.product-card .price {
+    font-size: 14px;
+    color: #333333;
+}
+
+.product-card .color-swatch {
+    width: 20px;
+    height: 20px;
+    background-color: #d4af37;
+    border: 1px solid #e0e0e0;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .product-card {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .product-card {
+        width: calc(100% - 20px);
+    }
+}
+
+
+
+.legacy-footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    /* Aligns all columns at the top */
+    flex-wrap: wrap;
+    padding: 40px;
+    background-color: #f5f5f5;
+    gap: 50px;
+}
+
+/* Styling for the Legacy Club Section */
+.ctent {
+    text-align: center;
+    max-width: 300px;
+    flex: 1;
+}
+
+.ctent h2 {
+    font-family: 'Georgia', serif;
+    font-size: 32px;
+    color: #2c3e50;
+}
+
+.ctent p {
+    font-size: 18px;
+    color: #2c3e50;
+}
+
+.email-signup input[type="email"] {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    width: 200px;
+}
+
+.email-signup button {
+    padding: 12px 16px;
+    font-size: 16px;
+    background-color: #ccc;
+    border: none;
+    cursor: pointer;
+}
+
+/* Footer containing 4 sections */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1100px;
+    flex: 3;
+    gap: 50px;
+    /* Adds spacing between all columns */
+}
+
+.footer div {
+    text-align: left;
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer h3 {
+    font-size: 22px;
+    color: #2c3e50;
+    margin-bottom: 12px;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin-bottom: 8px;
+}
+
+.footer ul li a {
+    text-decoration: none;
+    color: #2c3e50;
+    font-size: 18px;
+}
+
+.footer ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Full-screen brand name */
+.brand-name {
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 600px;
+    /* Scales based on viewport width */
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #2c3e50;
+    margin: 0;
+    padding: 0;
+    padding-left: 15px;
+
+}
+
+
+@media (max-width: 1024px) {
+    .legacy-footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer div {
+        text-align: center;
+        min-width: unset;
+    }
+
+    .brand-name {
+        font-size: 20vw;
+        /* Bigger text on smaller screens */
+    }
+}
