@@ -50,10 +50,11 @@ body {
 
 .hero .content {
     position: absolute;
-    bottom: 20px;
-    left: 20px;
-    margin-left: 15px;
+    bottom: 950px;
+    left: 40px;
+    margin-left: 150px;
     margin-bottom: 25px;
+    color: white;
 }
 
 .hero .content h1 {
@@ -82,8 +83,6 @@ body {
     color: #fff;
     font-size: 14px;
     margin-top: 10px;
-
-
 }
 
 @media (max-width: 768px) {
@@ -112,8 +111,6 @@ body {
         padding: 8px 16px;
     }
 }
-
-
 
 .gold-box {
     display: flex;
@@ -159,46 +156,42 @@ body {
     }
 }
 
-
+.section-with-background {
+    position: relative;
+    /* background-image: url("https://storage.googleapis.com/a1aa/image/5djYPnjJEj6fpgt32ZsJfaXGH2dJpR3QkyQKYPpQBKY.jpg");  */
+    background-image: url(../images/clark-street-mercantile-qnKhZJPKFD8-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
 .interior-box {
-
     position: relative;
-    width: 100%;
-    height: 100%;
-    max-width: 1500px;
-    overflow: hidden;
+    z-index: 1;
 }
 
-.background-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.cotent {
+.content {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    color: black;
-    z-index: 99;
+    color: white;
+    z-index: 1;
 }
 
-.cotent h1 {
+.content h1 {
     font-family: 'Playfair Display', serif;
     font-size: 3em;
     margin: 0;
 }
 
-.cotent h2 {
+.content h2 {
     font-family: 'Playfair Display', serif;
     font-size: 2em;
     margin: 0;
 }
 
-.cotent p {
+.content p {
     font-size: 1em;
     margin: 20px 0;
 }
@@ -231,10 +224,12 @@ body {
     right: 0;
 }
 
-
 .text-box {
     text-align: center;
     padding: 50px;
+    color: white;
+    position: relative;
+    z-index: 1;
 }
 
 .tile {
@@ -249,7 +244,7 @@ body {
     display: block;
     line-height: 1;
     text-decoration: underline;
-    color: #000;
+    color: purple;
     text-align: left;
 }
 
@@ -264,8 +259,6 @@ body {
     margin-top: 10px;
     font-style: italic;
 }
-
-
 
 .name-head {
     background-color: #f5f5f5;
@@ -345,10 +338,6 @@ body {
 .name-cotent .naiv i:hover {
     background: rgba(0, 0, 0, 0.8);
 }
-
-
-
-
 
 .legacy-footer-container {
     display: flex;
